@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+$Light-Cyan: #cee3e9;
+$Neon-Green: rgb(82, 255, 168);
+$Grayish-Blue: #4e5d73;
+$Dark-Grayish-Blue: #323a49;
+$Dark-Blue: #1f2632;
+$fn-weight: 800;
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+/* Main Style */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Dark-Blue;
+}
+main {
+  position: relative;
+  max-width: 540px;
+  min-width: 320px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 15px;
+  background-color: $Dark-Grayish-Blue;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .4rem;
+    color: $Neon-Green;
+    font-size: .8rem;
+    animation: fromTop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+  h2 {
+    color: $Light-Cyan;
+    font-weight: $fn-weight;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  #separador {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    animation: fromLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $Neon-Green;
+    border: none;
+    border-radius: 100vmax;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    bottom: -32px;
+    left: calc(50% - 32px);
+    cursor: pointer;
+    transition: .25s ease-out;
+    animation: fromRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    &:hover {
+      box-shadow: 0px 0px 14px 10px rgba(82,255,168,0.5);
+      -webkit-box-shadow: 0px 0px 14px 10px rgba(82,255,168,0.5);
+      -moz-box-shadow: 0px 0px 14px 10px rgba(82,255,168,0.5);
+    }
+  }
+}
+/* Animations */
+@keyframes fromRight {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromLeft {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromTop {
+  from {
+    transform: translateY(-100px);
+    opacity: .1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (width <= 550px) {
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    width: 90%;
+    padding: 50px 20px;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+/* Falta floating */
