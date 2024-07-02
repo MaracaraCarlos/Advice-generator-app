@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Link
 
-- Solution URL: [solution](https://github.com/MaracaraCarlos/Frontend-Mentor-Social-Link-Profile)
+- Solution URL: [solution](https://github.com/MaracaraCarlos/Advice-generator-app)
 - Live Site URL: [page](https://maracaracarlos.github.io/Frontend-Mentor-Social-Link-Profile/)
 
 ## My process
