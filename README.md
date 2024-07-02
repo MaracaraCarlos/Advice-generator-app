@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![active-states](https://github.com/MaracaraCarlos/Advice-generator-app/assets/113530553/296be224-df5e-4a48-9c02-c5f033c27f4f)
 
 ### Link
 
 - Solution URL: [solution](https://github.com/MaracaraCarlos/Advice-generator-app)
-- Live Site URL: [page](https://maracaracarlos.github.io/Frontend-Mentor-Social-Link-Profile/)
+- Live Site URL: [Netlify](https://advice-generator-cems.netlify.app/)
 
 ## My process
 
